@@ -1,0 +1,47 @@
+
+
+
+html {
+    min-height: 100%;
+}
+body {
+    background: linear-gradient(135deg,white, grey);
+   
+}
+
+h1 {
+    max-width: 100%;
+    margins: auto;
+    text-align: center;
+    text-shadow: 4px 4px 10px darkgreen;
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    
+    text-align: center;
+}
+
+li a {
+    
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+nav {
+    max-width: 100%;
+    margins: auto;
+    color: red;
+}
