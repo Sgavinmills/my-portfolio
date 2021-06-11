@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap');
 
 
+
+/*Standard CSS opening. Can use this on most stylesheets */
 * {
     padding: 0;
     margin: 0;
@@ -12,7 +14,7 @@
   
 
     
-
+/*Left this here incase I want to try implementing a background image again */
 /*.wrapper {
     /*background: url(images/background.jpg) no-repeat; 
     background-size: cover;
@@ -57,7 +59,7 @@ body {
     
 }
 
-.projects {
+.projects {  /*Just a box. Will need to amend when actually have some projects to put in */
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -69,26 +71,35 @@ body {
 }
 
 
-
-
-
-footer {
-    color: rgba(255,255,255,0.719);
+.nameheader {
+    float: left;
+    height: auto;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 50px;
+    text-shadow: 2px 2px rgb(200,200,200);
+    transition: 1s;
     
-    padding-top: 15px;
-    
-    position: absolute;
-    bottom: 0;
-    width: 99%;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
-    height: 75px;
-    
-    
-    background: rgba(2,11,34, 0.8);
 }
+
+
+
+.nameheader:hover {
+    color: red;
+    
+}
+
+nav ul li a:hover { 
+    background: red;
+    color: black;
+}
+
+nav ul li a:active{ 
+    background: red;
+    color: black;
+}
+
 
 nav {
     height: 100px;
@@ -225,54 +236,12 @@ p::after {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col1, .col2, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
   }
 
-
-
-
-.nameheader {
-    float: left;
-    height: auto;
-    padding: 10px 20px;
-    color: white;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 50px;
-    text-shadow: 2px 2px rgb(200,200,200);
-    
-}
-
-.nameheader {
-    transition: 1s;
-}
-
-.nameheader:hover {
-    color: red;
-    
-}
-
-nav ul li a:hover { 
-    background: red;
-    color: black;
-}
-
-nav ul li a:active{ 
-    background: red;
-    color: black;
-}
-
-div {
-    /*border: 2px solid red;--!>*/
-
-}
-
-img {
-   /* border: 2px solid red; */
-    
-}
 
 
 #myprofile {
@@ -282,6 +251,24 @@ img {
     margin-top: 20px;
    
     
+}
+
+footer {
+    color: rgba(255,255,255,0.719);
+    
+    padding-top: 15px;
+    
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    height: 75px;
+    
+    
+    background: rgba(2,11,34, 0.8);
 }
 
 
